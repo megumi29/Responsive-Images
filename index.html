@@ -4,57 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Responsive Images</title>
+    <title>Cats</title>
 </head>
+<link rel="stylesheet" href="styles.css">
 
 <body>
+    <picture>
+        <source media="(min-width: 320px)" srcset="./images/hero.jpg">
+        <source srcset="./images/hero.jpg">
 
+        <img src="./images/cat-2.jpg" alt="KITTY!">
+    </picture>
 
-    <div class="page_container">
-
-        <section class="header">
-
-
-            <picture class="hero">
-                <source
-                  media = "(min-width: 401px)"
-                  srcset="images/hero-big.png">
-
-                <source
-                  srcset = "images/hero-small.png">
-                
-               
-                <img src="images/hero-small.jpg">
-            </picture>
-
-            <div class="profile">
-                <img src="images/profile.png">
-                <h1>Kitties Are Litty</h1>
-            </div>
-        </section>
-
-
-        <section class="footer">
-            <div class="cat-1 footer_img">
-                <img src="images/cat-1.jpg" alt="Cute kitty">
-            </div>
-            <div class="cat-2 footer_img">
-                <img src="images/cat-2.jpg" alt="cute kitty numer 2">
-            </div>
-            <div class="cat-3 footer_img">
-                <img src="images/cat-3.jpg" alt="cute kitty number 3">
-            </div>
-        </section>
+    <div class="image-container">
+        <img class="profile-pic" src="./images/profile.png" alt="Profilepic">
     </div>
 
+    <h2>
+        Mister Pickles
+    </h2>
 
- 
+    <section class="content-section">
+        <div class="image-container-2 a">
+            <img src="./images/cat-1.jpg" alt="tabby_kitten">
+        </div>
 
+        <div class="image-container-2 b">
+            <img src="./images/cat-2.jpg" alt="tabby_adult">
+        </div>
 
-
-
-
-
+        <div class="image-container-2 c">
+            <img src="./images/cat-3.jpg" alt="calico">
+        </div>
+    </section>
 </body>
+
 </html>
